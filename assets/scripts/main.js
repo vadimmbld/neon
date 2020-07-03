@@ -22,6 +22,7 @@ function paralaxElem(elem){
     }
 }
 function nextSong(){
+    fillBar[0].style.width = 0 +'%';
     let musicName = songs[currentMusic].textContent;
     song.src = 'assets/audio/'+ songsMp3[currentMusic];
     song.play();
@@ -222,14 +223,16 @@ $(document).ready(function(){
         const cardItem = this.querySelector('.card-item-3d');
         cardItem.style.transform = 'rotateX(0deg) rotateY(0deg)'
     }
+    $('#about-me .background-photos-grid').on('load' , function(){
         $('#about-me .background-photos-grid').masonry({
             itemSelector: '#about-me .grid-item-photo',
             columnWidth: '#about-me .grid-sizer',
             horizontalOrder: true,
             gutter:20,
         });
+    })
+        
     $('#favorite-films .container .films img').on('load', function(){
-        console.log('kek');
         $('#favorite-films .container .films').masonry({
             itemSelector: '#favorite-films .film ',
             columnWidth: '#favorite-films .film',
