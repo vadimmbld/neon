@@ -223,14 +223,13 @@ $(document).ready(function(){
         const cardItem = this.querySelector('.card-item-3d');
         cardItem.style.transform = 'rotateX(0deg) rotateY(0deg)'
     }
-    $('#about-me .background-photos-grid').on('load' , function(){
         $('#about-me .background-photos-grid').masonry({
             itemSelector: '#about-me .grid-item-photo',
             columnWidth: '#about-me .grid-sizer',
             horizontalOrder: true,
             gutter:20,
         });
-    })
+
         
     $('#favorite-films .container .films img').on('load', function(){
         $('#favorite-films .container .films').masonry({
