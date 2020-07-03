@@ -1,0 +1,47 @@
+@media screen and (max-width: 1024px) {
+  #portfolio .container .list-works .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #my-friends .container .friend-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #my-friends .container .friend-list .friend:not(:nth-last-child(-n+1)) {
+      margin-bottom: 30px; } }
+
+@media screen and (max-width: 800px) {
+  #about-me .container .row .photos {
+    height: 300px; }
+  #footer .container .wrap a {
+    font-size: 17px; } }
+
+@media screen and (max-width: 620px) {
+  #about-me .container .row .text-about-me {
+    font-size: 19px; }
+  #footer .container .wrap a {
+    font-size: 14px; } }
+
+@media screen and (max-width: 500px) {
+  #favorite-music .title {
+    font-size: 24px; }
+  #footer .container .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #footer .container .wrap a {
+      font-size: 20px; }
+      #footer .container .wrap a:not(:nth-last-child(-n+1)) {
+        margin-bottom: 30px; } }
